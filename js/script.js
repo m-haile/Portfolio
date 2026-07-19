@@ -17,3 +17,22 @@ const setActive = () => {
 
 window.addEventListener("scroll", setActive, { passive: true });
 setActive();
+
+// Menu burger mobile
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNav = document.querySelector(".main-nav");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = mainNav.classList.toggle("is-open");
+  menuToggle.classList.toggle("is-open", isOpen);
+  menuToggle.setAttribute("aria-expanded", isOpen);
+});
+
+// Ferme le menu quand on clique un lien
+mainNav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    mainNav.classList.remove("is-open");
+    menuToggle.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+  });
+});

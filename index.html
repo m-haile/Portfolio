@@ -18,12 +18,16 @@
 <body>
 
   <a class="skip-link" href="#main">Aller au contenu</a>
-  <a class="btn btn-cv"href="assets/CV_Mahlet_HAILE _GEBRU.pdf" download>Télécharger mon CV</a>
-  
+
   <header class="site-header">
     <div class="wrap header-inner">
       <a href="#top" class="logo">MHG<span class="dot">.</span></a>
-      <nav class="main-nav" aria-label="Navigation principale">
+
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
         <a href="#apropos">À propos</a>
         <a href="#competences">Compétences</a>
         <a href="#projets">Projets</a>
@@ -39,12 +43,14 @@
       <div class="wrap hero-grid">
         <div class="hero-text">
           <p class="eyebrow">Développeuse Web Junior — Limoges</p>
-          <h1>Mahlet<br>Haile Gebru</h1>
+          <h1>Mahlet<br>HAILE GEBRU</h1>
           <p class="hero-sub">Je construis des interfaces React soignées et des API Node.js/Express fiables. Rigoureuse,
             curieuse, prête à apprendre vite.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="#projets">Voir mes projets</a>
             <a class="btn btn-ghost" href="#contact">Me contacter</a>
+            <a class="btn btn-cv" href="assets/CV_Mahlet_HAILE_GEBRU.pdf" download
+              aria-label="Télécharger mon CV (fichier PDF)">Télécharger mon CV</a>
           </div>
         </div>
         <div class="hero-code" aria-hidden="true">
@@ -123,7 +129,7 @@
                 <li>React Router</li>
                 <li>Sass</li>
               </ul>
-              <a class="btn btn-ghost btn-sm" href="https://github.com/m-haile" target="_blank" rel="noopener">Voir sur
+              <a class="btn btn-ghost btn-sm project-link" href="https://github.com/m-haile" target="_blank" rel="noopener">Voir sur
                 GitHub</a>
             </div>
           </article>
