@@ -380,6 +380,49 @@ h1 {
 }
 
 /* Projects */
+
+.pitch-line {
+  color: var(--muted);
+  font-size: 1.02rem;
+  max-width: 65ch;
+  margin: 0 0 16px;
+}
+.pitch-line strong { color: var(--text); }
+
+.project-details {
+  margin: 4px 0 16px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+  position: relative;
+  z-index: 1; /* passe au-dessus du lien étiré */
+}
+
+.project-details summary {
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-details dl {
+  margin: 14px 0 0;
+}
+
+.project-details dt {
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--text);
+  margin-top: 12px;
+}
+
+.project-details dd {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
