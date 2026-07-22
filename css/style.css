@@ -590,6 +590,7 @@ h1 {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  
   .menu-toggle {
     display: flex;
   }
@@ -603,9 +604,9 @@ h1 {
     border-bottom: 1px solid var(--border);
     padding: 20px 24px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 16px;
-    text-align: center;
+    text-align: start;
     opacity: 0;
     transform: translateY(-8px);
     pointer-events: none;
@@ -617,16 +618,25 @@ h1 {
     transform: translateY(0);
     pointer-events: auto;
   }
+  
+   .main-nav a {
+    font-size: 13px;
+  }
+
+  .hero{
+    padding: 30px 0 ;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
   .btn-cv {
     padding: 9px 16px;
     font-size: 13px;
   }
-
-  .main-nav a {
-    font-size: 13px;
-  }
-
+ 
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -637,5 +647,14 @@ h1 {
 
   .btn {
     text-align: center;
+  }
+
+  .projects-grid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section {
+    padding: 30px 0;
   }
 }
