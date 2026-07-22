@@ -67,9 +67,9 @@ h3 {
   letter-spacing: -0.01em;
 }
 
-h1 {
+/* h1 {
   text-align: center;
-}
+} */
 
 /* Skip link */
 .skip-link {
@@ -179,7 +179,7 @@ h1 {
    Hero
 ========================================= */
 .hero {
-  padding: 96px 0 88px;
+  padding: 30px 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -328,7 +328,7 @@ h1 {
    Sections
 ========================================= */
 .section {
-  padding: 80px 0;
+  padding: 30px 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -506,19 +506,17 @@ h1 {
   transform: translateY(-3px);
 }
 
+
 .project-thumb {
-  height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  color: var(--muted);
-  background:
-    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0 2px, transparent 2px 14px),
-    var(--bg-alt);
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+  display: block;
   border-bottom: 1px solid var(--border);
+  background: var(--bg-alt);
 }
+
 
 .project-body {
   padding: 24px;
@@ -577,7 +575,7 @@ h1 {
   }
 
   .hero {
-    padding: 64px 0 56px;
+    padding: 30px 0 ;
   }
 
   .skills-grid {
