@@ -1,4 +1,5 @@
 // Highlight the current section link in the nav while scrolling
+
 const sections = document.querySelectorAll("main section[id]");
 const navLinks = document.querySelectorAll(".main-nav a");
 
@@ -19,6 +20,7 @@ window.addEventListener("scroll", setActive, { passive: true });
 setActive();
 
 // Menu burger mobile
+
 const menuToggle = document.querySelector(".menu-toggle");
 const mainNav = document.querySelector(".main-nav");
 
@@ -29,6 +31,7 @@ menuToggle.addEventListener("click", () => {
 });
 
 // Ferme le menu quand on clique un lien
+
 mainNav.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     mainNav.classList.remove("is-open");

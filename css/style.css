@@ -259,6 +259,17 @@ h3 {
   border-color: #8ff2e0;
 }
 
+.btn-contact {
+  background: #a78bfa;
+  color: #14161b;
+  border-color: #a78bfa;
+}
+
+.btn-contact:hover {
+  background: #c4b5fd;
+  border-color: #c4b5fd;
+}
+
 .btn-ghost:hover {
   border-color: var(--accent);
 }
@@ -569,7 +580,7 @@ h3 {
 /* =========================================
    Responsive
 ========================================= */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1060px) {
   .hero-grid {
     grid-template-columns: 1fr;
   }
