@@ -54,8 +54,17 @@ if (contactForm) {
   formStatus.style.display = "none";
   contactForm.insertAdjacentElement("afterend", formStatus);
  
+  const namePattern = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/;
+
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
+
+  const nameValue = contactForm.querySelector("#name").value.trim();
+  if (!namePattern.test(nameValue)) {
+    alert("Le nom ne doit contenir que des lettres, merci de corriger.");
+    return; // bloque l'envoi, rien n'est envoyé
+  }
+  
     const submitBtn = contactForm.querySelector("button[type='submit']");
     submitBtn.disabled = true;
     submitBtn.textContent = "Envoi en cours...";
