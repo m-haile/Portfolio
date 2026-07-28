@@ -4,31 +4,44 @@ Portfolio personnel d'une développeuse web junior.
 
 ## Présentation
 
-Ce projet présente le profil, les compétences, les projets et les coordonnées de Mahlet Haile Gebru.
+Ce projet met en valeur le profil, les compétences, les réalisations et les coordonnées de Mahlet Haile Gebru.
+
+## Objectif
+
+Ce site sert de vitrine professionnelle pour présenter :
+
+- les compétences techniques et créatives ;
+- les projets réalisés ;
+- l'expérience et le parcours pédagogique ;
+- un moyen de contact clair et accessible.
 
 ## Fonctionnalités
 
-- page d'accueil moderne ;
-- sections pour les compétences, les projets et le parcours ;
-- navigation fluide ;
-- design responsive ;
-- lien de téléchargement du CV.
+- page d'accueil moderne et épurée ;
+- sections dédiées aux compétences, aux réalisations et au parcours ;
+- navigation fluide et responsive ;
+- design adaptable aux écrans mobiles et desktop ;
+- lien pour télécharger le CV.
 
-## Structure
+## Structure du projet
 
-- [index.html](index.html) : structure principale du site ;
-- [css/style.css](css/style.css) : styles et mise en page ;
-- [js/script.js](js/script.js) : interactions JavaScript ;
-- [assets/](assets/) : fichiers multimédias et CV.
+- `index.html` : structure principale du site.
+- `css/style.css` : styles visuels et mise en page.
+- `js/script.js` : gestion des interactions et du comportement dynamique.
+- `assets/` : ressources multimédias, images et documents.
 
-## Démarrage
+## Installation et utilisation
 
-1. Clonez le dépôt.
-2. Ouvrez [index.html](index.html) dans un navigateur.
-3. Si besoin, utilisez Live Server pour une prévisualisation plus simple.
+1. Clonez ce dépôt.
+2. Ouvrez `index.html` dans votre navigateur.
+3. Pour un rendu local facilité, utilisez une extension comme Live Server.
 
-## Technologies
+## Technologies utilisées
 
 - HTML5
 - CSS3
 - JavaScript
+
+## Auteur
+
+Mahlet Haile Gebru

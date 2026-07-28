@@ -572,6 +572,59 @@ h3 {
   flex-wrap: wrap;
 }
 
+/* Formulaire de contact — nouveau */
+.contact-form {
+  max-width: 480px;
+  margin: 0 auto 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-group input,
+.form-group textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  padding: 12px 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-blue);
+}
+
+.contact-form button {
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
+}
+
+.form-success {
+  color: var(--color-orange);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
 /* Footer */
 .site-footer {
   padding: 32px 0;
