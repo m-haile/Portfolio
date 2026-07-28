@@ -82,3 +82,16 @@ if (contactForm) {
     }
   });
 }
+
+// Empêche la saisie de chiffres et symboles dans le champ Nom
+ 
+const nameInput = document.querySelector("#name");
+ 
+if (nameInput) {
+  nameInput.addEventListener("keypress", (e) => {
+    const isLetter = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]$/.test(e.key);
+    if (!isLetter) {
+      e.preventDefault();
+    }
+  });
+}
