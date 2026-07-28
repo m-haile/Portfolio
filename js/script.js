@@ -45,26 +45,28 @@ mainNav.querySelectorAll("a").forEach((link) => {
 emailjs.init({
   publicKey: "PHL_vUbubyr3nfa8m",
 });
- 
+
 const contactForm = document.querySelector("#contact-form");
- 
+const nameInput = document.querySelector("#name");
+const namePattern = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/;
+
 if (contactForm) {
   const formStatus = document.createElement("p");
   formStatus.className = "form-success";
   formStatus.style.display = "none";
   contactForm.insertAdjacentElement("afterend", formStatus);
- 
-  const namePattern = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/;
 
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-  const nameValue = contactForm.querySelector("#name").value.trim();
+  const nameValue = nameInput.value.trim();
   if (!namePattern.test(nameValue)) {
-    alert("Le nom ne doit contenir que des lettres, merci de corriger.");
+    document.getElementById("name-error").textContent="Le nom ne doit contenir que des lettres, merci de corriger.";
     return; // bloque l'envoi, rien n'est envoyé
+  }else {
+    document.getElementById("name-error").textContent ="";
   }
-  
+
     const submitBtn = contactForm.querySelector("button[type='submit']");
     submitBtn.disabled = true;
     submitBtn.textContent = "Envoi en cours...";
@@ -94,11 +96,9 @@ if (contactForm) {
 
 // Empêche la saisie de chiffres et symboles dans le champ Nom
  
-const nameInput = document.querySelector("#name");
- 
 if (nameInput) {
   nameInput.addEventListener("keypress", (e) => {
-    const isLetter = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]$/.test(e.key);
+    const isLetter = namePattern.test(e.key);
     if (!isLetter) {
       e.preventDefault();
     }

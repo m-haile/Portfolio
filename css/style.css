@@ -13,6 +13,7 @@
   --color-violet: #a78bfa;
   --color-orange: #f5a35c;
   --color-orange-hover: #ffb976;
+  --color-error: #ff4444;
 
   --font-display: "Fraunces", serif;
   --font-body: "Inter", sans-serif;
@@ -570,6 +571,10 @@ h3 {
   justify-content: center;
   gap: 14px;
   flex-wrap: wrap;
+}
+
+#name-error{
+  color: var(--color-error);
 }
 
 /* Formulaire de contact — nouveau */
